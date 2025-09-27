@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo com gradiente suave */
+body {
+    background: linear-gradient(135deg, #c1f3f0, #e5fec7);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+/* Container central */
+.container {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    width: 100%;
+    max-width: 520px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* Títulos */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    color: #444;
+}
+
+/* Inputs */
+input, select, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    background: #f0faff;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+}
+
+/* Botão */
+button {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2980b9, #1f5f8c);
+    transform: scale(1.03);
+}
+
+/* Área de resultados */
+.resultado {
+    margin-top: 20px;
+    padding: 18px;
+    background: #e8f6fd;
+    border-left: 6px solid #3498db;
+    border-radius: 10px;
+    font-size: 1.1em;
+    color: #2c3e50;
+    animation: aparecer 0.5s ease;
+}
+
+/* Animação suave */
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
